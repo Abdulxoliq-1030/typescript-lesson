@@ -1,11 +1,15 @@
-type PersonProps = {
-  name: {
-    first: string;
-    last: string;
-  };
-};
+import React from 'react'
 
-export const Person = (props: PersonProps) => {
-  const { first, last } = props.name;
-  return <div>{first} {last}</div>;
-};
+interface Props {}
+
+function Person(props: Props) {
+    const {} = props
+
+    return (
+        <>
+        
+        </>
+    )
+}
+
+export default Person

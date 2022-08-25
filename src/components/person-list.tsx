@@ -1,20 +1,15 @@
-type PersonListProps = {
-  names: {
-    first: string;
-    last: string;
-  }[];
-};
+import React from 'react'
 
-export const PersonList = (props: PersonListProps) => {
-  return (
-    <div>
-      {props.names.map(({ first, last }) => {
-        return (
-          <h2 key={last}>
-            {first} {last}
-          </h2>
-        );
-      })}
-    </div>
-  );
-};
+interface Props {}
+
+function PersonList(props: Props) {
+    const {} = props
+
+    return (
+        <>
+        
+        </>
+    )
+}
+
+export default PersonList
