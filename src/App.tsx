@@ -1,12 +1,35 @@
 import "./App.css";
-import { Private } from "./components/auth/private";
-import { Profile } from "./components/auth/profile";
-import { Counter } from "./components/class/counter";
+import { List } from "./components/generics/list";
 
 function App() {
   return (
     <div className="App">
-      <Private isLoggedIn={true} component={Profile} />
+      <List
+        items={["Batman", "Superman", "Wonder Woman"]}
+        onClick={(item) => console.log(item)}
+      />
+      <List items={[1, 2, 3, 4, 5]} onClick={(item) => console.log(item)} />
+      {/* <List
+        items={[
+          {
+            first: "Bruce",
+            last: "Wayne",
+          },
+          {
+            first: "Bruce",
+            last: "Wayne",
+          },
+          {
+            first: "Bruce",
+            last: "Wayne",
+          },
+          {
+            first: "Bruce",
+            last: "Wayne",
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      /> */}
     </div>
   );
 }
