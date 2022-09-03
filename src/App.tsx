@@ -1,13 +1,10 @@
-import { UserContextProvider } from "./components/context/user-context";
-import { User } from "./components/context/user";
 import "./App.css";
+import { Counter } from "./components/class/counter";
 
 function App() {
   return (
     <div className="App">
-      <UserContextProvider>
-        <User />
-      </UserContextProvider>
+      <Counter message="Hello Abdulxoliq" />
     </div>
   );
 }
