@@ -1,10 +1,12 @@
 import "./App.css";
-import { Toast } from "./components/template-literals/toast";
+import { CustomButton } from "./components/html/button";
 
 function App() {
   return (
     <div className="App">
-      <Toast position="center" />
+      <CustomButton variant="primary" onClick={() => console.log("Clicked")}>
+        Primary Button
+      </CustomButton>
     </div>
   );
 }
